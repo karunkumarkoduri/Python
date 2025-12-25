@@ -1,0 +1,23 @@
+lst1=[1,2,3,4,5,4,3,2,1,6]
+lst2=[2,2,3,4,5,4,3,2,2,6]
+print("list1:",lst1,"list2:",lst2)
+print("Types:","list1:",type(lst1),"\t list2:",type(lst2))
+import numpy as np
+nplst1=np.array(lst1)
+nplst2=np.array(lst2)
+print("After converting to Numpy arrays:")
+print("nplist1:",nplst1,"nplist2:",nplst2)
+print("Types:","nplist1:",type(nplst1),"\t nplist2:",type(nplst2))
+print("Sum of lists:",nplst1+nplst2)
+print("max of nplist1:",np.max(nplst1))
+print("min of nplist1:",np.min(nplst1))
+print("mean of nplist1:",np.mean(nplst1))
+print("standard deviation of nplist1:",np.std(nplst1))
+print("Dimention of nplist1:",np.ndim(nplst1))
+print("Indexing and slicing:")
+print("Indexing of nplist1 from 1 to 5:",nplst1[1:5])
+print("Indexing of nplist1 from 5 to end:",nplst1[5:])
+print("Indexing of nplist1 from first to 5:",nplst1[:5])
+print("slicing of nplist1 from -5 to -1:",nplst1[-5:-1])
+print("slicing of nplist1 from -5 to end:",nplst1[-5:])
+print("slicing of nplist1 from first to -5:",nplst1[:-5])	
