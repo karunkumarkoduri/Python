@@ -1,0 +1,10 @@
+print("---Demonstration of lambda with map(),filter(),and reduce()---")
+from functools import reduce
+nums=tuple(map(int,input("Enter numbers seperated by spaces:").split()))
+print("Original Tuple:",nums)
+square=tuple(map(lambda x:x**2,nums))
+print("Squares using map():",square)
+evens=tuple(filter(lambda x:x%2==0,nums))
+print("Even numbers using filter():",evens)
+total=reduce(lambda x,y:x+y,nums)
+print("Sum using reduce():",total)
