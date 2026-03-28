@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox, filedialog, Menu
 
 root = tk.Tk()
 root.title("GUI Widgets Demo")
-root.geometry("500x400")
+root.geometry("400x300")
 
 main_menu = Menu(root)
 root.config(menu=main_menu)
